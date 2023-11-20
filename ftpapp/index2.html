@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTP File Uploader</title>
+</head>
+
+<body>
+    <h1>FTP File Uploader</h1>
+    <form enctype="multipart/form-data" action="upload.php" method="post">
+        <label for="file">Select a file:</label>
+        <input type="file" name="file" id="file">
+        <br>
+        <label for="username">FTP Username:</label>
+        <input type="text" name="username" id="username" required>
+        <br>
+        <label for="password">FTP Password:</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+
+</html>
